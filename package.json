@@ -1,7 +1,7 @@
 {
   "name": "ember-web-animations-next-polyfill",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An Ember addon that provides and enables use of the web-animations-next polyfill in consuming applications",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -9,15 +9,18 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each"
+    "test": "ember try:each",
+    "test:blueprint": "node ./node-tests/blueprints/ember-web-animations-next-polyfill-test.js",
+    "test:ci": "npm test && npm run test:blueprint"
   },
-  "repository": "",
+  "repository": "https://github.com/BrianSipple/ember-web-animations-next-polyfill",
   "engines": {
     "node": ">= 0.12.0"
   },
-  "author": "",
+  "author": "Brian Sipple <@Brian_Sipple>",
   "license": "MIT",
   "devDependencies": {
+    "bower": "^1.7.9",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^2.4.1",
     "ember-cli": "2.9.1",
@@ -32,7 +35,6 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-data": "^2.9.0",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
@@ -41,10 +43,17 @@
     "loader.js": "^4.0.10"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "web animation",
+    "web animations api",
+    "waapi",
+    "ember animation",
+    "ember polyfill"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "ember-cli-babel": "^5.1.7",
+    "fs-extra": "^1.0.0",
+    "rsvp": "^3.3.3"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
