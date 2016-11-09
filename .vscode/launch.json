@@ -16,6 +16,27 @@
     },
     {
       "type": "node",
+      "request": "launch",
+      "name": "Launch Dummy App",
+      "program": "${workspaceRoot}/node_modules/.bin/ember",
+      "cwd": "${workspaceRoot}",
+      "args": [
+        "serve"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Build Dummy App For Production",
+      "program": "${workspaceRoot}/node_modules/.bin/ember",
+      "cwd": "${workspaceRoot}",
+      "args": [
+        "build",
+        "--environment=production"
+      ]
+    },
+    {
+      "type": "node",
       "request": "attach",
       "name": "Attach to Process",
       "port": 5858

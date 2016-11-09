@@ -20,12 +20,6 @@ module.exports = function(defaults) {
     This build file does *not* influence how the addon or the app using it
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
-  var rootPath = app.project.root;
-
-  var vendorSrcDir = path.join(rootPath, 'vendor/web-animations-js', 'src');
-  var projectDestDir = path.join(rootPath, app.bowerDirectory, 'web-animations-js', 'src');
-
-  addExtraWAAPIFiles(vendorSrcDir, projectDestDir);
 
   return app.toTree();
 };
