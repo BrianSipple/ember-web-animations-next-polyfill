@@ -31,7 +31,7 @@ of the [upcoming version of the Web Animations API](http://w3c.github.io/web-ani
 This project will intend to stay up to date with offering the 
 [latest version of the polyfill](https://github.com/web-animations/web-animations-js/blob/master/package.json). 
 If you notice a discrepency between said version and the [version installed by the 
-addon's blueprint](https://github.com/BrianSipple/ember-web-animations-next-polyfill/blob/master/blueprints/ember-web-animations-next-polyfill/index.js), 
+addon's blueprint](https://github.com/BrianSipple/ember-web-animations-next-polyfill/blob/master/blueprints/ember-web-animations-next-polyfill/index.js#L30), 
 please feel free to [open up an issue](https://github.com/BrianSipple/ember-web-animations-next-polyfill/issues).
   
 ### Installation
