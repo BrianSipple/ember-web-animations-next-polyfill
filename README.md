@@ -1,5 +1,7 @@
 # ember-web-animations-next-polyfill
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BrianSipple/ember-web-animations-next-polyfill.svg)](https://greenkeeper.io/)
+
 _An Ember addon that provides and enables use of the `web-animations-next` version of the 
 [Web Animations API Polyfill](https://github.com/web-animations/web-animations-js)._
 
