@@ -1,3 +1,8 @@
+# 2.0.0 &mdash; March 3, 2017
+
+- **[BREAKING CHANGE]** Remove Bower dependency; use NPM distribution of `web-animations-js` to build addon instead ([#4](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/4)).
+
+
 # 1.1.0 &mdash; March 3, 2017
 
 - **[ENHANCEMENT]** Update to `ember-cli-2.11` ([#3](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/3)).
