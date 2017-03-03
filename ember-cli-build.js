@@ -1,13 +1,5 @@
 /*jshint node:true*/
-/* global require, module */
 var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
-var path = require('path');
-var fs = require('fs-extra');
-
-function addExtraWAAPIFiles(srcDirPath, destDirPath) {
-  fs.mkdirpSync(destDirPath);
-  fs.copySync(srcDirPath, destDirPath);
-}
 
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {

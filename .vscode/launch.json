@@ -17,6 +17,17 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Launch & Serve Tests",
+      "program": "${workspaceRoot}/node_modules/.bin/ember",
+      "cwd": "${workspaceRoot}",
+      "args": [
+        "test",
+        "--serve"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Dummy App",
       "program": "${workspaceRoot}/node_modules/.bin/ember",
       "cwd": "${workspaceRoot}",

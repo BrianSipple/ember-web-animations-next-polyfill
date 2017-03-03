@@ -9,9 +9,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each",
-    "test:blueprint": "node ./node-tests/blueprints/ember-web-animations-next-polyfill-test.js",
-    "test:ci": "npm test && npm run test:blueprint"
+    "test": "ember try:each"
   },
   "repository": "https://github.com/BrianSipple/ember-web-animations-next-polyfill",
   "engines": {
@@ -47,14 +45,16 @@
     "ember-addon",
     "web animation",
     "web animations api",
+    "web animations api next",
     "waapi",
     "ember animation",
     "ember polyfill"
   ],
   "dependencies": {
+    "broccoli-funnel": "^1.1.0",
+    "broccoli-merge-trees": "^1.2.3",
     "ember-cli-babel": "^5.1.7",
-    "fs-extra": "^2.0.0",
-    "rsvp": "^3.3.3"
+    "web-animations-js": "^2.2.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

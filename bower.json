@@ -1,6 +1,5 @@
 {
   "name": "ember-web-animations-next-polyfill",
   "dependencies": {
-    "web-animations-js": "^2.2.2"
   }
 }
