@@ -1,6 +1,6 @@
 {
   "name": "ember-web-animations-next-polyfill",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "An Ember addon that provides and enables use of the web-animations-next polyfill in consuming applications",
   "directories": {
     "doc": "doc",
