@@ -25,5 +25,6 @@ module.exports = {
     });
 
     return new MergeTrees([vendorTree, WAAPITree]);
+    return vendorTree ? new MergeTrees([vendorTree, WAAPITree]) : WAAPITree;
   }
 };
