@@ -1,10 +1,12 @@
-/* jshint node: true */
-var path = require('path');
+/* eslint-env node */
+'use strict';
 
-var MergeTrees = require('broccoli-merge-trees');
-var Funnel = require('broccoli-funnel');
+const path = require('path');
 
-var FILE_NAME = 'web-animations-next.min.js';
+const MergeTrees = require('broccoli-merge-trees');
+const Funnel = require('broccoli-funnel');
+
+const FILE_NAME = 'web-animations-next.min.js';
 
 module.exports = {
   name: 'ember-web-animations-next-polyfill',
@@ -20,7 +22,7 @@ module.exports = {
   },
 
   isAddon() {
-    var keywords = this.project.pkg.keywords;
+    const keywords = this.project.pkg.keywords;
 
     return keywords.length && keywords.indexOf('ember-addon') !== -1;
   },
@@ -34,7 +36,7 @@ module.exports = {
       return vendorTree;
     }
 
-    var WAAPITree = new Funnel(path.dirname(require.resolve('web-animations-js/' + FILE_NAME)), {
+    const WAAPITree = new Funnel(path.dirname(require.resolve('web-animations-js/' + FILE_NAME)), {
       include: [
         'src/*',
         FILE_NAME,

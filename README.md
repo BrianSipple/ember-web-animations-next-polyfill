@@ -20,15 +20,20 @@ ember install ember-web-animations-next-polyfill
 No setup or special configuration is needed: you can now use the all of the functionality
 of the [upcoming version of the Web Animations API](http://w3c.github.io/web-animations/).
 
+## Browser Support
+
+The Web Animations JS project provides [documentation on the browsers supported by the polyfill](https://github.com/web-animations/web-animations-js/blob/dev/docs/support.md#browser-support). 
+As always, please be sure to check that it's compatible with your needs.
+
 ## Contributing
 
-### Installation
+### Installing the Project
 
 * `git clone` this repository
 * `npm install`
 * `bower install`
 
-### Running
+### Running the Project Dummy App
 
 * `ember serve`
 * Visit your app at http://localhost:4200.
