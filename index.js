@@ -15,7 +15,25 @@ module.exports = {
     this.import('vendor/' + FILE_NAME);
   },
 
+  isAddonDummyApp() {
+    return this.app.name === 'dummy';
+  },
+
+  isAddon() {
+    var keywords = this.project.pkg.keywords;
+
+    return keywords.length && keywords.indexOf('ember-addon') !== -1;
+  },
+
+  shouldIgnoreVendorTree() {
+    return this.isAddon() && !this.isAddonDummyApp();
+  },
+
   treeForVendor(vendorTree) {
+    if (this.shouldIgnoreVendorTree()) {
+      return vendorTree;
+    }
+
     var WAAPITree = new Funnel(path.dirname(require.resolve('web-animations-js/' + FILE_NAME)), {
       include: [
         'src/*',
@@ -24,6 +42,6 @@ module.exports = {
       ]
     });
 
-    return new MergeTrees([vendorTree, WAAPITree]);
+    return vendorTree ? new MergeTrees([vendorTree, WAAPITree]) : WAAPITree;
   }
 };
