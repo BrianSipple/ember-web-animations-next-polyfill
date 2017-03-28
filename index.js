@@ -22,7 +22,7 @@ module.exports = {
   },
 
   isAddon() {
-    const keywords = this.project.pkg.keywords;
+    const keywords = this.project.pkg.keywords || [];
 
     return keywords.length && keywords.indexOf('ember-addon') !== -1;
   },
