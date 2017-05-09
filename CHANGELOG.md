@@ -1,14 +1,21 @@
+# 2.1.1 &mdash; May 9, 2017
+
+- **[PATCH]** Protect against missing keywords in a consuming project's `package.json` ([#15](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/15)).
+
+
 # 2.1.0 &mdash; March 21, 2017
 
 - **[ENHANCEMENT]** Update project structure for ember / ember-cli 2.12 ([#9](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/9)).
 - **[ENHANCEMENT]** Add `yarn.lock` file ([#9](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/9)).
 - **[ENHANCEMENT]** Remove bower.json and .bowerrc ([#9](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/9)).
 
+
 # 2.0.1 &mdash; March 20, 2017
 
 - **[PATCH]** Fix `treeForVendor` hook ([#8](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/8)).
   + Account for the `vendorTree` argument potentially being undefined.
   + Refrain from modifying the vendor tree if we're running inside of another addon.
+
 
 # 2.0.0 &mdash; March 3, 2017
 
