@@ -1,3 +1,13 @@
+# 2.2.0 &mdash; May 13, 2017
+
+- **[ENHANCEMENT]** Ember CLI Fastboot compatibility: no longer import the polyfill -- which requires
+`document` to be present -- when consuming applications are running with Fastboot ([#27](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/27)).
+- **[ENHANCEMENT]** Update project structure for Ember / Ember CLI 2.13
+  - [#22](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/22)
+  - [#23](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/23)
+  - [#25](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/25)
+  - [#28](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/28)
+
 # 2.1.1 &mdash; May 9, 2017
 
 - **[PATCH]** Protect against missing keywords in a consuming project's `package.json` ([#15](https://github.com/BrianSipple/ember-web-animations-next-polyfill/pull/15)).
