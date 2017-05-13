@@ -14,7 +14,9 @@ module.exports = {
   included() {
     this._super.included.apply(this, arguments);
 
-    this.import('vendor/' + FILE_NAME);
+    if (this.shouldImportPolyfill()) {
+      this.import('vendor/' + FILE_NAME);
+    }
   },
 
   isAddonDummyApp() {
@@ -27,12 +29,22 @@ module.exports = {
     return keywords.length && keywords.indexOf('ember-addon') !== -1;
   },
 
-  shouldIgnoreVendorTree() {
-    return this.isAddon() && !this.isAddonDummyApp();
+  isUsingFastboot() {
+    return !!process.env.EMBER_CLI_FASTBOOT;
+  },
+
+  shouldImportPolyfill() {
+    return (
+      // don't import for addons -- unless their building their own dummy apps
+      (this.isAddon() && !this.isAddonDummyApp()) ||
+
+      // don't import when Ember CLI Fastboot is enabled
+      !this.isUsingFastboot()
+    );
   },
 
   treeForVendor(vendorTree) {
-    if (this.shouldIgnoreVendorTree()) {
+    if (!this.shouldImportPolyfill()) {
       return vendorTree;
     }
 
