@@ -18,9 +18,10 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
+    "test": "ember try:each",
     "test:dev": "ember test",
     "test:fastboot": "ember fastboot:test",
-    "test": "ember try:each && yarn run test:fastboot"
+    "test:all": "npm run test && npm run test:fastboot"
   },
   "repository": "https://github.com/BrianSipple/ember-web-animations-next-polyfill",
   "author": "Brian Sipple <@Brian_Sipple>",
