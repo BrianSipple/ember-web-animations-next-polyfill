@@ -27,24 +27,33 @@ As always, please be sure to check that it's compatible with your needs.
 
 ## Contributing
 
-### Installing the Project
+### Show Off Your Project!
+
+If you have an Ember project that's using the Web Animations API &emdash and making use of `ember-web-animations-next-polyfill` &emdash
+I'd love to list it here. Feel free to open up an issue that adds a link to the list below:
+
+*
+
+### Developing Locally
+
+#### Installing the Project
 
 * `git clone` this repository
 * `npm install`
 * `bower install`
 
-### Running the Project Dummy App
+#### Running the Project Dummy App
 
 * `ember serve`
 * Visit your app at http://localhost:4200.
 
-### Running Tests
+#### Running Tests
 
 * `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-### Building
+#### Building
 
 * `ember build`
 
