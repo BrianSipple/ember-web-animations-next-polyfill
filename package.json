@@ -33,7 +33,7 @@
     "web-animations-js": "^2.2.2"
   },
   "devDependencies": {
-    "broccoli-asset-rev": "^2.4.5",
+    "broccoli-asset-rev": "^3.0.0",
     "chai": "^3.5.0",
     "ember-ajax": "^3.0.0",
     "ember-cli": "2.13.1",
