@@ -2227,11 +2227,10 @@ ember-disable-prototype-extensions@^1.1.0:
   dependencies:
     ember-cli-babel "^5.1.5"
 
-ember-export-application-global@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-2.0.0.tgz#8d6d7619ac8a1a3f8c43003549eb21ebed685bd2"
-  dependencies:
-    ember-cli-babel "^6.0.0-beta.7"
+ember-export-application-global@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-2.0.1.tgz#b120a70e322ab208defc9e2daebe8d0dfc2dcd46"
+  integrity sha512-B7wiurPgsxsSGzJuPFkpBWnaeuCu2PGpG2BjyrfA1VcL7//o+5RSnZqiCEY326y7qmxb2GoCgo0ft03KBU0rRw==
 
 ember-fastboot-addon-tests@^0.3.3:
   version "0.3.3"
