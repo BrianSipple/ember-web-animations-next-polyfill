@@ -27,7 +27,7 @@
   "author": "Brian Sipple <@Brian_Sipple>",
   "license": "MIT",
   "dependencies": {
-    "broccoli-funnel": "^1.1.0",
+    "broccoli-funnel": "^3.0.0",
     "broccoli-merge-trees": "^2.0.0",
     "ember-cli-babel": "^6.0.0",
     "web-animations-js": "^2.2.2"
